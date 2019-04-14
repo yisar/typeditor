@@ -1,6 +1,8 @@
 # typeditor
 
-A markdown editor inspired by typecho which is tiny but perfect
+对 typecho 自带编辑器的重新实现，寻找了很多，只有 typecho 的 markdown 标准深得我心
+
+原版是 php + jq 实现，typeditor 使用原生 ts 来写，适配所有前端场景
 
 ### Use
 
