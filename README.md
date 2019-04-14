@@ -19,7 +19,7 @@ dom:
 js:
 
 ```javascript
-let te = new TypeEditor({
+let te = new Typeditor({
   el: '#typeditor',
 })
 ```
