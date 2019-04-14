@@ -26,4 +26,4 @@ te.value('念念不忘，必有回响')
 ```
 
 ### License
-MIT © 132yse inspired by typecho
+MIT © 132yse inspired by [typecho](https://github.com/typecho/typecho)
