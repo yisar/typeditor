@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "lib": ["es5", "es6", "dom"],
+    "target": "es5",
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["node_modules"]
+}
