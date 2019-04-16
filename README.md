@@ -34,6 +34,10 @@ te.value()
 te.value('念念不忘，必有回响')
 ```
 
+### Parse
+
+关于 markdown 的解析库，typeditor 推荐同样小而美的 [snarkdown](https://github.com/developit/snarkdown)
+
 ### License
 
 MIT © 132yse inspired by [typecho](https://github.com/typecho/typecho)
