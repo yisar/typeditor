@@ -22,7 +22,8 @@ js:
 
 ```javascript
 let te = new Typeditor({
-  el: '#typeditor',
+  el: '#typeditor', //目标容器
+  preview:`https://www.clicli.us/${id}` //预览地址，可以根据 id 跳转到转义过的前端页面
 })
 ```
 

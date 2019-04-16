@@ -1,6 +1,6 @@
 {
-  "name": "typeditor",
-  "version": "0.0.1",
+  "name": "type-editor",
+  "version": "0.0.0",
   "description": "A markdown editor inspired by typecho which is tiny but perfect",
   "main": "rollup.config.js",
   "scripts": {
