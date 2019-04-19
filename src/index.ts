@@ -1,4 +1,4 @@
-export class Typeditor {
+class Typeditor {
   content: string
   el: Element
   template: string
@@ -8,7 +8,8 @@ export class Typeditor {
     this.init()
   }
 
-  static template = `
+  init() {
+    this.el.innerHTML = `
     <style>
       @import "https://at.alicdn.com/t/font_1151392_5hwi3w2ygqu.css";
       li {
@@ -23,7 +24,7 @@ export class Typeditor {
         width: 100%;
         position: relative;
         font: 14px 微软雅黑;
-        color: #334265
+        color: #334265;
       }
       #typeditor .menu li {
         display: inline-block;
@@ -35,7 +36,7 @@ export class Typeditor {
       }
       #typeditor .menu li:hover,
       #typeditor .menu li.active {
-        background: #d0d4e0;
+        background: #e0e4ef;
         border-radius: 4px;
       }
       #typeditor .editor {
@@ -59,9 +60,15 @@ export class Typeditor {
     </div>
     <div class="editor" contenteditable="true"></div>
   `
+  }
 
-  init() {
-    this.el.innerHTML = this.template
+  static tags = {
+    bold: { start: '**', end: '**', placeholder: '请输入加粗内容' },
+    italic: { start: '*', end: '*', placeholder: '请输入加斜内容' },
+    link: { start: '[', end: '][N]', placeholder: '请输入链接标题' },
+    image: { start: '![', end: '][N]', placeholder: '请输入图片描述' },
+    quote: { start: '>', end: '', placeholder: '请输入引用内容' },
+    code: { start: '`', end: '`', placeholder: '请输入代码内容' },
   }
 
   value(content: string) {
